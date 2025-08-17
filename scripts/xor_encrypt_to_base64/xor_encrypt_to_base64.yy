@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"xor_encrypt_to_base64",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"xor_encrypt_to_base64",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

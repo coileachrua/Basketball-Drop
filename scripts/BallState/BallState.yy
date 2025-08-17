@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BallState",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BallState",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
