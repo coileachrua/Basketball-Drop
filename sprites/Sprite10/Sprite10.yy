@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Menu",
-    "path":"Menu.yyp",
+    "name":"Basketball Drop",
+    "path":"Basketball Drop.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
