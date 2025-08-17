@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Menu",
+  "%Name":"Basketball Drop",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -38,7 +38,7 @@
   "MetaData":{
     "IDEVersion":"2024.13.1.193",
   },
-  "name":"Menu",
+  "name":"Basketball Drop",
   "resources":[
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
