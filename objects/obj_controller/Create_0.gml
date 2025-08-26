@@ -37,6 +37,8 @@ autosave_timer = 0;
 
 // Flag controlling whether balls can be spawned
 global.can_spawn_ball = false;
+// Frames to wait after enabling before spawning is allowed
+global.spawn_ball_cooldown = 0;
 
 // Track the current room to detect transitions
 last_room = room;

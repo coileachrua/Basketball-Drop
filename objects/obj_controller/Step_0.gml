@@ -3,7 +3,16 @@
 // Reset spawn permission on room changes
 if (room != last_room) {
     global.can_spawn_ball = (room != rm_main_menu && room != rm_options);
+    if (global.can_spawn_ball) {
+        // Delay initial spawning to avoid accidental drops on room entry
+        global.spawn_ball_cooldown = 10;
+    }
     last_room = room;
+}
+
+// Countdown the spawn cooldown if active
+if (global.spawn_ball_cooldown > 0) {
+    global.spawn_ball_cooldown--;
 }
 
 // Advance timer (seconds)
