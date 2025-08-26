@@ -46,6 +46,8 @@
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_gamepad","path":"objects/obj_gamepad/obj_gamepad.yy",},},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
+    {"id":{"name":"obj_hoop","path":"objects/obj_hoop/obj_hoop.yy",},},
+    {"id":{"name":"obj_hoop_rim_segment","path":"objects/obj_hoop_rim_segment/obj_hoop_rim_segment.yy",},},
     {"id":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},},
     {"id":{"name":"obj_room_button","path":"objects/obj_room_button/obj_room_button.yy",},},
     {"id":{"name":"obj_static","path":"objects/obj_static/obj_static.yy",},},
