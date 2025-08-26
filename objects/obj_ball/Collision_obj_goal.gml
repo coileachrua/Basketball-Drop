@@ -6,6 +6,7 @@ if (sfx_enabled) {
     audio_play_sound(phaser, 10, false);
 }
 
+global.can_spawn_ball = false;
 if (room_next(room) != -1) {
     room_goto_next();
 } else {

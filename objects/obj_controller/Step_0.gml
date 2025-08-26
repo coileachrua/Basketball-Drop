@@ -1,5 +1,11 @@
 /// obj_controller – Step Event
 
+// Reset spawn permission on room changes
+if (room != last_room) {
+    global.can_spawn_ball = (room != rm_main_menu && room != rm_options);
+    last_room = room;
+}
+
 // Advance timer (seconds)
 autosave_timer += delta_time / 1_000_000;
 

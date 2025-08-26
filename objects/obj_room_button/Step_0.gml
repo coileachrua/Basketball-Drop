@@ -8,6 +8,7 @@ hover = (mx >= x && mx <= x + width && my >= y && my <= y + height);
 
 // On click, change room
 if (hover && mouse_check_button_pressed(mb_left)) {
+    global.can_spawn_ball = false;
     if (room_exists(target_room)) {
         room_goto(target_room);
     }
