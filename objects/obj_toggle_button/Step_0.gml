@@ -7,9 +7,9 @@ var my = device_mouse_y(0);
 hover = point_in_rectangle(mx, my, x, y, x + width, y + height);
 
 if (hover && mouse_check_button_pressed(mb_left)) {
-    
-   
-		var controller = global.controller;
+    global.can_spawn_ball = false;
+
+                var controller = global.controller;
         var current = variable_struct_get(controller.settings, toggle_key);
         var flipped = !current;
         variable_struct_set(controller.settings, toggle_key, flipped);
