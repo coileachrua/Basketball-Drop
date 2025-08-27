@@ -39,7 +39,15 @@ if (room == rm_main_menu && is_struct(global.loaded_data) && variable_struct_exi
     var y_pos = 96;
     for (var i = 0; i < array_length(global.loaded_data.attempts); i++) {
         var entry = global.loaded_data.attempts[i];
-        draw_text(48, y_pos, entry.name + ": " + string(entry.score));
+        var score_text;
+        if (entry.score > 0) {
+            score_text = string(entry.score) + " over";
+        } else if (entry.score < 0) {
+            score_text = string(-entry.score) + " under";
+        } else {
+            score_text = "Even";
+        }
+        draw_text(48, y_pos, entry.name + ": " + score_text);
         y_pos += 20;
     }
 }
