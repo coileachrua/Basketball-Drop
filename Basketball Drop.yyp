@@ -51,6 +51,7 @@
     {"id":{"name":"obj_static","path":"objects/obj_static/obj_static.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_toggle_button","path":"objects/obj_toggle_button/obj_toggle_button.yy",},},
+    {"id":{"name":"obj_reset_button","path":"objects/obj_reset_button/obj_reset_button.yy",},},
     {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},},
     {"id":{"name":"rm_1","path":"rooms/rm_1/rm_1.yy",},},
     {"id":{"name":"rm_2","path":"rooms/rm_2/rm_2.yy",},},
