@@ -40,6 +40,12 @@ global.can_spawn_ball = false;
 // Frames to wait after enabling before spawning is allowed
 global.spawn_ball_cooldown = 0;
 
+// Height of the valid spawn zone (top section of the screen)
+global.spawn_zone_height = 0;
+
+// Pulse timer used for the glowing spawn zone indicator
+spawn_zone_pulse = 0;
+
 // Track the current room to detect transitions
 last_room = room;
 
