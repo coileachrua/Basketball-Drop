@@ -7,8 +7,29 @@ if (sfx_enabled) {
 }
 
 global.can_spawn_ball = false;
+array_push(global.hole_scores, global.strokes);
+global.running_total += global.strokes;
+var delta = global.strokes - global.current_par;
+if (delta <= -2) {
+    global.classification = (delta <= -3) ? "Albatross" : "Eagle";
+} else if (delta == -1) {
+    global.classification = "Birdie";
+} else if (delta == 0) {
+    global.classification = "Par";
+} else if (delta == 1) {
+    global.classification = "Bogey";
+} else {
+    global.classification = string(delta) + " over";
+}
+
 if (room_next(room) != -1) {
     room_goto_next();
 } else {
+    var idx = array_length(global.loaded_data.attempts) + 1;
+    var entry = { name: "attempt " + string(idx), score: global.running_total };
+    array_push(global.loaded_data.attempts, entry);
+    save_game(global.save_filename, global.loaded_data);
+    global.running_total = 0;
+    global.hole_scores = [];
     room_goto(rm_main_menu);
 }

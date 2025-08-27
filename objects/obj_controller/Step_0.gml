@@ -2,6 +2,9 @@
 
 // Reset spawn permission on room changes
 if (room != last_room) {
+    global.current_par = variable_struct_get(par_values, room_get_name(room), 0);
+    global.strokes = 0;
+    global.classification = "";
     global.can_spawn_ball = (room != rm_main_menu && room != rm_options);
     if (global.can_spawn_ball) {
         // Delay initial spawning to avoid accidental drops on room entry

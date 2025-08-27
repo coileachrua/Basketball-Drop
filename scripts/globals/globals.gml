@@ -1,3 +1,3 @@
-#macro SAVE_VERSION 2
+#macro SAVE_VERSION 3
 #macro SAVE_KEY "MySecretKey123"
 #macro AUTOSAVE_INTERVAL 10

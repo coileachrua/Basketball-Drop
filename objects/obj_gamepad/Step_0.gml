@@ -4,5 +4,6 @@ if (global.can_spawn_ball &&
     mouse_y < global.spawn_zone_height &&
     alarm[0] < 0) {
     instance_create_layer(mouse_x, mouse_y, layer, obj_ball);
+    global.strokes++;
     alarm[0] = 5;
 }
