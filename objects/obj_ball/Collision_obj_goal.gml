@@ -6,6 +6,9 @@ if (sfx_enabled) {
     audio_play_sound(phaser, 10, false);
 }
 
+// Trigger net animation on the goal
+other.net_offset = 6;
+
 global.can_spawn_ball = false;
 array_push(global.hole_scores, global.strokes);
 array_push(global.hole_pars, global.current_par);
