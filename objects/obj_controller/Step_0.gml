@@ -12,6 +12,7 @@ if (room != last_room) {
     global.classification = "";
     global.can_spawn_ball = (room != rm_main_menu && room != rm_options);
     if (global.can_spawn_ball) {
+        global.par_total += global.current_par;
         // Delay initial spawning to avoid accidental drops on room entry
         global.spawn_ball_cooldown = 10;
         // Limit spawning to the top quarter of the room

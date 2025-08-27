@@ -26,7 +26,8 @@ global.save_filename = filename;
 
 // Mapping of rooms to their par values
 par_values = {
-    rm_1: 3
+    rm_1: 2,
+    rm_2: 4
 };
 
 // Initialise score tracking globals
@@ -34,6 +35,7 @@ global.current_par   = 0;
 global.strokes       = 0;
 global.running_total = 0;
 global.hole_scores   = [];
+global.par_total     = 0;
 global.classification = "";
 
 // ————————————————

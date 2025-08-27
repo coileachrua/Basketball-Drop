@@ -26,10 +26,12 @@ if (room_next(room) != -1) {
     room_goto_next();
 } else {
     var idx = array_length(global.loaded_data.attempts) + 1;
-    var entry = { name: "attempt " + string(idx), score: global.running_total };
+    var delta_total = global.running_total - global.par_total;
+    var entry = { name: "attempt " + string(idx), score: delta_total };
     array_push(global.loaded_data.attempts, entry);
     save_game(global.save_filename, global.loaded_data);
     global.running_total = 0;
     global.hole_scores = [];
+    global.par_total = 0;
     room_goto(rm_main_menu);
 }
