@@ -36,10 +36,10 @@ if (global.can_spawn_ball) {
 
 // Show attempt history on the main menu
 if (room == rm_main_menu && is_struct(global.loaded_data) && variable_struct_exists(global.loaded_data, "attempts")) {
-    var y = 96;
+    var y_pos = 96;
     for (var i = 0; i < array_length(global.loaded_data.attempts); i++) {
         var entry = global.loaded_data.attempts[i];
-        draw_text(48, y, entry.name + ": " + string(entry.score));
-        y += 20;
+        draw_text(48, y_pos, entry.name + ": " + string(entry.score));
+        y_pos += 20;
     }
 }
