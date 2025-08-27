@@ -25,3 +25,21 @@ if (is_struct(loaded_data)) {
 // Autosave countdown
 var time_left = max(0, AUTOSAVE_INTERVAL - autosave_timer);
 draw_text(48, 56, "Next Autosave In: " + string(round(time_left)) + "s");
+
+// Display current strokes and par during gameplay
+if (global.can_spawn_ball) {
+    draw_text(48, 76, "Strokes: " + string(global.strokes) + " / Par: " + string(global.current_par));
+    if (global.classification != "") {
+        draw_text(48, 96, global.classification);
+    }
+}
+
+// Show attempt history on the main menu
+if (room == rm_main_menu && is_struct(global.loaded_data) && variable_struct_exists(global.loaded_data, "attempts")) {
+    var y_pos = 96;
+    for (var i = 0; i < array_length(global.loaded_data.attempts); i++) {
+        var entry = global.loaded_data.attempts[i];
+        draw_text(48, y_pos, entry.name + ": " + string(entry.score));
+        y_pos += 20;
+    }
+}

@@ -36,6 +36,9 @@ function load_game(_filename) {
             show_debug_message("[Save Upgrade] Version updated from " + string(original_version) + " to " + string(upgraded_data.version));
             save_game(_filename, upgraded_data);
         }
+        if (!variable_struct_exists(upgraded_data, "attempts")) {
+            upgraded_data.attempts = [];
+        }
 
         show_debug_message("END_LOAD_DATA");
         return upgraded_data;
@@ -47,7 +50,8 @@ function load_game(_filename) {
     var new_data = {
         version: SAVE_VERSION,
         sfx_enabled: true,
-		music_enabled: true
+        music_enabled: true,
+        attempts: []
     };
 
     save_game(_filename, new_data);
