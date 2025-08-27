@@ -1,6 +1,7 @@
 // obj_room_button – Draw Event
+var col = #FF5F0A;
 /// Draw the button rectangle and its label centered
-draw_set_color(hover ? hover_color : bg_color);
+draw_set_color(hover ? hover_color :col );
 draw_rectangle(x, y, x + width, y + height, false);
 
 draw_set_halign(fa_center);

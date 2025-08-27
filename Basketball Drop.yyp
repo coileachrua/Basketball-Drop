@@ -72,6 +72,7 @@
     {"id":{"name":"short_click_5","path":"sounds/short_click_5/short_click_5.yy",},},
     {"id":{"name":"short_click_6","path":"sounds/short_click_6/short_click_6.yy",},},
     {"id":{"name":"short_click_7","path":"sounds/short_click_7/short_click_7.yy",},},
+    {"id":{"name":"spr_backboard","path":"sprites/spr_backboard/spr_backboard.yy",},},
     {"id":{"name":"spr_Block","path":"sprites/spr_Block/spr_Block.yy",},},
     {"id":{"name":"spr_circle","path":"sprites/spr_circle/spr_circle.yy",},},
     {"id":{"name":"spr_enter","path":"sprites/spr_enter/spr_enter.yy",},},
