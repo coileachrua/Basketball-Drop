@@ -37,6 +37,8 @@ global.running_total = 0;
 global.hole_scores   = [];
 global.par_total     = 0;
 global.classification = "";
+global.hole_pars     = [];
+global.next_room     = -1;
 
 // ————————————————
 // 3) Initialize Runtime Settings
