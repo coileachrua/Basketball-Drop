@@ -23,5 +23,7 @@ if (delta <= -2) {
     global.classification = string(delta) + " over";
 }
 
+
 global.next_room = room_next(room);
 room_goto(rm_score);
+

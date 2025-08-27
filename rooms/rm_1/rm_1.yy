@@ -14,7 +14,6 @@
     {"name":"inst_58D84ED4","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_52F2FC0A","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_4E251AF0","path":"rooms/rm_1/rm_1.yy",},
-    {"name":"inst_1ECBE5C3","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_2DD68C13","path":"rooms/rm_1/rm_1.yy",},
   ],
   "isDnd":false,
@@ -28,7 +27,6 @@
         {"$GMRInstance":"v2","%Name":"inst_58D84ED4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58D84ED4","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":0.5,"x":224.0,"y":832.0,},
         {"$GMRInstance":"v2","%Name":"inst_52F2FC0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52F2FC0A","objectId":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":0.5,"x":360.0,"y":832.0,},
         {"$GMRInstance":"v2","%Name":"inst_4E251AF0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E251AF0","objectId":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":195.0,"y":501.0,},
-        {"$GMRInstance":"v2","%Name":"inst_1ECBE5C3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1ECBE5C3","objectId":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":274.0,"y":297.0,},
         {"$GMRInstance":"v2","%Name":"inst_2DD68C13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DD68C13","objectId":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":306.0,"y":661.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
