@@ -1,0 +1,24 @@
+{
+  "$GMFont":"",
+  "%Name":"fnt_title",
+  "name":"fnt_title",
+  "AntiAlias":1,
+  "bold":false,
+  "charset":0,
+  "fontName":"Arial",
+  "hinting":0,
+  "includeTTF":false,
+  "italic":false,
+  "size":72,
+  "styleName":"Regular",
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default"
+  },
+  "parent":{
+    "name":"Fonts",
+    "path":"folders/Fonts.yy"
+  },
+  "resourceType":"GMFont",
+  "resourceVersion":"2.0"
+}
