@@ -9,9 +9,9 @@ if (room != last_room) {
         global.current_par = 0;
     }
     global.strokes = 0;
-    global.classification = "";
     global.can_spawn_ball = (room != rm_main_menu && room != rm_options && room != rm_score);
     if (global.can_spawn_ball) {
+        global.classification = "";
         global.par_total += global.current_par;
         // Delay initial spawning to avoid accidental drops on room entry
         global.spawn_ball_cooldown = 10;

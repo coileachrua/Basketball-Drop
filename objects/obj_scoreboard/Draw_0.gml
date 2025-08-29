@@ -7,6 +7,13 @@ if (global.next_room == -1) {
     draw_text(room_width / 2, 32, "Final Scores");
 }
 
+// Show classification for the most recently completed hole
+var hole_index = array_length(global.hole_scores);
+if (hole_index > 0 && global.classification != "") {
+    draw_set_halign(fa_center);
+    draw_text(room_width / 2, 64, "Hole " + string(hole_index) + ": " + global.classification);
+}
+
 // table layout
 var cols = 4;
 var col_w = 80;
