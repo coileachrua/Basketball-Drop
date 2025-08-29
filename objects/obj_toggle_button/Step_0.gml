@@ -17,12 +17,18 @@ if (hover && mouse_check_button_pressed(mb_left)) {
         // Mirror into the save struct
         variable_struct_set(controller.loaded_data, toggle_key, flipped);
         save_game(controller.filename, controller.loaded_data);
-	var music_enabled = variable_struct_get(controller.settings, "music_enabled");
+        var music_enabled = variable_struct_get(controller.settings, "music_enabled");
+        var sfx_enabled   = variable_struct_get(controller.settings, "sfx_enabled");
 
-		if (music_enabled) {
-			 if (!audio_is_playing(flow)) {
-			    audio_play_sound(flow, 1, true); 
-			 }
-		}
+                if (music_enabled) {
+                         if (!audio_is_playing(flow)) {
+                            audio_play_sound(flow, 1, true);
+                         }
+                }
+                if (sfx_enabled) {
+                         if (!audio_is_playing(rain)) {
+                            audio_play_sound(rain, 1, true);
+                         }
+                }
     
 }
