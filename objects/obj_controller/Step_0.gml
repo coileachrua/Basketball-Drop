@@ -51,11 +51,11 @@ if (autosave_timer >= AUTOSAVE_INTERVAL) {
 var controller = global.controller;
 
 
-if (controller.settings.music_enabled && !audio_is_playing(bounce)) {
+if (controller.settings.music_enabled && !audio_is_playing(flow)) {
 
-    audio_play_sound(bounce, 1, true);
+    audio_play_sound(flow, 1, true);
 }
 if (!controller.settings.music_enabled) {
 
-    audio_stop_sound(bounce);
+    audio_stop_sound(flow);
 }

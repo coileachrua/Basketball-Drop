@@ -40,5 +40,5 @@
     "path":"sprites/spr_Star/spr_Star.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

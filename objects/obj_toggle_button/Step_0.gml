@@ -20,8 +20,8 @@ if (hover && mouse_check_button_pressed(mb_left)) {
 	var music_enabled = variable_struct_get(controller.settings, "music_enabled");
 
 		if (music_enabled) {
-			 if (!audio_is_playing(bounce)) {
-			    audio_play_sound(bounce, 1, true); 
+			 if (!audio_is_playing(flow)) {
+			    audio_play_sound(flow, 1, true); 
 			 }
 		}
     
