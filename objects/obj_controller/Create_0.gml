@@ -30,6 +30,12 @@ par_values = {
     rm_2: 4
 };
 
+// Mapping of rooms to their spawn zone extents (normalised 0-1)
+spawn_zones = {
+    rm_1: { x1: 0, y1: 0, x2: 1,   y2: 0.125 }, // top eighth of screen
+    rm_2: { x1: 0, y1: 0, x2: 0.5, y2: 0.25  }  // top-left quarter
+};
+
 // Initialise score tracking globals
 global.current_par   = 0;
 global.strokes       = 0;
@@ -58,8 +64,11 @@ global.can_spawn_ball = false;
 // Frames to wait after enabling before spawning is allowed
 global.spawn_ball_cooldown = 0;
 
-// Height of the valid spawn zone (top section of the screen)
-global.spawn_zone_height = 0;
+// Boundaries of the valid spawn zone
+global.spawn_zone_left   = 0;
+global.spawn_zone_top    = 0;
+global.spawn_zone_right  = 0;
+global.spawn_zone_bottom = 0;
 
 // Pulse timer used for the glowing spawn zone indicator
 spawn_zone_pulse = 0;

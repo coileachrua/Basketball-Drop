@@ -15,12 +15,27 @@ if (room != last_room) {
         global.par_total += global.current_par;
         // Delay initial spawning to avoid accidental drops on room entry
         global.spawn_ball_cooldown = 10;
-        // Limit spawning to the top quarter of the room
-        global.spawn_zone_height = room_height / 4;
+
+        if (variable_struct_exists(spawn_zones, room_name)) {
+            var zone = variable_struct_get(spawn_zones, room_name);
+            global.spawn_zone_left   = zone.x1 * room_width;
+            global.spawn_zone_top    = zone.y1 * room_height;
+            global.spawn_zone_right  = zone.x2 * room_width;
+            global.spawn_zone_bottom = zone.y2 * room_height;
+        } else {
+            // Default to the top eighth of the screen
+            global.spawn_zone_left   = 0;
+            global.spawn_zone_top    = 0;
+            global.spawn_zone_right  = room_width;
+            global.spawn_zone_bottom = room_height / 8;
+        }
     }
     else {
         // Outside gameplay rooms the zone is disabled
-        global.spawn_zone_height = 0;
+        global.spawn_zone_left   = 0;
+        global.spawn_zone_top    = 0;
+        global.spawn_zone_right  = 0;
+        global.spawn_zone_bottom = 0;
     }
     last_room = room;
 }
