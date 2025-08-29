@@ -11,8 +11,8 @@
   "name":"obj_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"gui",
-    "path":"folders/Objects/gui.yy",
+    "name":"abstract",
+    "path":"folders/Objects/abstract.yy",
   },
   "parentObjectId":null,
   "persistent":true,
