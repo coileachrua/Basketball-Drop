@@ -32,10 +32,12 @@ par_values = {
 };
 
 // Mapping of rooms to their spawn zone extents (normalised 0-1)
+// zone extends from x = 0.5 to 1 (right half) and y = 0 to 0.25 (top quarter).
 spawn_zones = {
     rm_1: { x1: 0, y1: 0, x2: 1,   y2: 0.125 }, // top eighth of screen
     rm_2: { x1: 0, y1: 0, x2: 0.5, y2: 0.25  },  // top-left quarter
-	rm_3: { x1: 0, y1: 0, x2: 1.5, y2: 0.25  }  // top-left quarter
+    rm_3: { x1: 0.5, y1: 0, x2: 1,   y2: 0.25  }  // top-right quarter
+
 };
 
 // Initialise score tracking globals
