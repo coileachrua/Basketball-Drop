@@ -23,7 +23,12 @@ if (delta <= -2) {
     global.classification = string(delta) + " over";
 }
 
+var next_rooms = {
+    rm_1: rm_2,
+    rm_2: rm_3,
+};
 
-global.next_room = room_next(room);
+var current_room_name = room_get_name(room);
+global.next_room = variable_struct_get(next_rooms, current_room_name, -1);
 room_goto(rm_score);
 
