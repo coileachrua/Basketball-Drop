@@ -1,7 +1,13 @@
 // obj_scoreboard – Draw Event
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
 draw_set_color(c_white);
+draw_set_valign(fa_top);
+
+if (global.next_room == -1) {
+    draw_set_halign(fa_center);
+    draw_text(room_width / 2, 32, "Final Scores");
+}
+
+draw_set_halign(fa_left);
 var y_pos = 100;
 for (var i = 0; i < array_length(global.hole_scores); i++) {
     var strokes = global.hole_scores[i];
