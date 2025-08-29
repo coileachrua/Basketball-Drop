@@ -28,7 +28,8 @@ global.save_filename = filename;
 par_values = {
     rm_1: 2,
     rm_2: 4,
-	rm_3: 3
+	rm_3: 3,
+	rm_4: 4
 };
 
 // Mapping of rooms to their spawn zone extents (normalised 0-1)
@@ -36,7 +37,8 @@ par_values = {
 spawn_zones = {
     rm_1: { x1: 0, y1: 0, x2: 1,   y2: 0.125 }, // top eighth of screen
     rm_2: { x1: 0, y1: 0, x2: 0.5, y2: 0.25  },  // top-left quarter
-    rm_3: { x1: 0.75, y1: 0, x2: 1,   y2: 0.25  }  // top-right quarter
+    rm_3: { x1: 0.75, y1: 0, x2: 1,   y2: 0.25  },  // top-right quarter
+	rm_4: { x1: 0, y1: 0, x2: 0.5, y2: 0.25  }  // top-left quarter
 
 };
 
