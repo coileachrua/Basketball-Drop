@@ -14,17 +14,18 @@ if (global.can_spawn_ball) {
     draw_set_color(c_white);
 }
 
-if (is_struct(loaded_data)) {
-    draw_text(48, 16, "SFX:   " + string(loaded_data.sfx_enabled ? "ON" : "OFF"));
-    draw_text(48, 36, "Music: " + string(loaded_data.music_enabled ? "ON" : "OFF"));
-} else {
-    draw_text(48, 16, "Save data not loaded.");
+if (show_debug_info) {
+    if (is_struct(loaded_data)) {
+        draw_text(48, 16, "SFX:   " + string(loaded_data.sfx_enabled ? "ON" : "OFF"));
+        draw_text(48, 36, "Music: " + string(loaded_data.music_enabled ? "ON" : "OFF"));
+    } else {
+        draw_text(48, 16, "Save data not loaded.");
+    }
+
+    // Autosave countdown
+    var time_left = max(0, AUTOSAVE_INTERVAL - autosave_timer);
+    draw_text(48, 56, "Next Autosave In: " + string(round(time_left)) + "s");
 }
-
-
-// Autosave countdown
-var time_left = max(0, AUTOSAVE_INTERVAL - autosave_timer);
-draw_text(48, 56, "Next Autosave In: " + string(round(time_left)) + "s");
 
 // Display current strokes and par during gameplay
 if (global.can_spawn_ball) {

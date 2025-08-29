@@ -78,5 +78,8 @@ last_room = room;
 
 
 // List every Sound asset name GameMaker knows about
-global.bounce_snds = [ bounce_1, bounce_2, bounce_3, bounce_4 ]; 
+global.bounce_snds = [ bounce_1, bounce_2, bounce_3, bounce_4 ];
 global.swish_snds  = [ swish_1 ];
+
+// Debug flag to toggle drawing of autosave and audio settings
+show_debug_info = false;
