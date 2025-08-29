@@ -10,7 +10,7 @@ if (room != last_room) {
     }
     global.strokes = 0;
     global.classification = "";
-    global.can_spawn_ball = (room != rm_main_menu && room != rm_options && room != rm_score);
+    global.can_spawn_ball = (room != rm_main_menu && room != rm_options && room != rm_score && room != rm_highscores);
     if (global.can_spawn_ball) {
         global.par_total += global.current_par;
         // Delay initial spawning to avoid accidental drops on room entry
