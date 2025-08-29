@@ -8,7 +8,7 @@ if (global.can_spawn_ball) {
     var pulse = 0.25 + 0.15 * sin(spawn_zone_pulse);
     draw_set_alpha(pulse);
     gpu_set_blendmode(bm_add);
-    draw_rectangle(0, 0, room_width, global.spawn_zone_height, false);
+    draw_rectangle(global.spawn_zone_left, global.spawn_zone_top, global.spawn_zone_right, global.spawn_zone_bottom, false);
     gpu_set_blendmode(bm_normal);
     draw_set_alpha(1);
     draw_set_color(c_white);
