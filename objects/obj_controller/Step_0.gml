@@ -59,3 +59,12 @@ if (!controller.settings.music_enabled) {
 
     audio_stop_sound(flow);
 }
+
+if (controller.settings.sfx_enabled && !audio_is_playing(rain)) {
+
+    audio_play_sound(rain, 1, true);
+}
+if (!controller.settings.sfx_enabled) {
+
+    audio_stop_sound(rain);
+}
