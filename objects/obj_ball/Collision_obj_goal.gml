@@ -25,5 +25,10 @@ if (delta <= -2) {
 
 
 global.next_room = room_next(room);
-room_goto(rm_score);
+if (sfx_enabled) {
+    var delay = max(1, ceil(audio_get_sound_length(swish_1) * room_speed));
+    alarm[0] = delay;
+} else {
+    room_goto(rm_score);
+}
 
