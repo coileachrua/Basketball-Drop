@@ -1,4 +1,10 @@
-if (pinned) exit;
+if (pinned) {
+    phy_position_x = start_x;
+    phy_position_y = start_y;
+    phy_speed_x = 0;
+    phy_speed_y = 0;
+    exit;
+}
 
 var ball_inst = instance_nearest(x, y, obj_ball);
 if (ball_inst != noone) {

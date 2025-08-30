@@ -10,3 +10,5 @@ physics_fixture_bind(fixture, id);
 physics_fixture_delete(fixture);
 
 image_alpha = 0;
+start_x = x;
+start_y = y;
