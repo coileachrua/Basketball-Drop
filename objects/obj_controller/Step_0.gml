@@ -40,10 +40,10 @@ if (room != last_room) {
 
     var title_text = "";
     switch (room) {
-        case rm_1: title_text = "Level 1"; break;
-        case rm_2: title_text = "Level 2"; break;
-        case rm_3: title_text = "Level 3"; break;
-        case rm_4: title_text = "Level 4"; break;
+        case rm_1: title_text = "Swish"; break;
+        case rm_2: title_text = "Collision"; break;
+        case rm_3: title_text = "Eye of the Needle"; break;
+        case rm_4: title_text = "Bumpy"; break;
     }
     if (title_text != "") {
         show_level_title(title_text);

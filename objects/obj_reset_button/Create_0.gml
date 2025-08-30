@@ -1,6 +1,7 @@
 
 hover    = false;           // Hover flag
-width       = 200;             // Button width
+// Expand button for easier clicking
+width       = 300;             // Button width
 x           = (room_width - width) / 2; // Center horizontally
 height      = 48;              // Button height
 font        = -1;              // Optional: set a font resource index

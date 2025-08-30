@@ -9,7 +9,8 @@ if (global.next_room == -1) {
 
 // table layout
 var cols = 4;
-var col_w = 80;
+// Widen columns for clearer spacing
+var col_w = 100;
 var start_x = room_width / 2 - col_w * cols / 2;
 var y_pos = 100;
 
@@ -19,7 +20,8 @@ draw_text(start_x + col_w * 0.5, y_pos, "Hole");
 draw_text(start_x + col_w * 1.5, y_pos, "Par");
 draw_text(start_x + col_w * 2.5, y_pos, "Score");
 draw_text(start_x + col_w * 3.5, y_pos, "Total");
-y_pos += 20;
+// Add extra vertical spacing after header
+y_pos += 30;
 
 // per-hole rows
 for (var i = 0; i < array_length(global.hole_scores); i++) {
@@ -38,7 +40,8 @@ for (var i = 0; i < array_length(global.hole_scores); i++) {
     draw_text(start_x + col_w * 1.5, y_pos, string(par));
     draw_text(start_x + col_w * 2.5, y_pos, string(strokes));
     draw_text(start_x + col_w * 3.5, y_pos, delta_text);
-    y_pos += 20;
+    // Space out rows for readability
+    y_pos += 30;
 }
 
 // totals row
