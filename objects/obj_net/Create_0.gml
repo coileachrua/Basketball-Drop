@@ -1,23 +1,11 @@
 cols = 4;
 rows = 4;
-spacing = 8;
-nodes = array_create(cols * rows, noone);
+spacing = 8; // vertical spacing between rows
 
-for (var j = 0; j < rows; j++) {
-    for (var i = 0; i < cols; i++) {
-        var nx = x + (i - (cols - 1) * 0.5) * spacing;
-        var ny = y + j * spacing;
-        var node = instance_create_layer(nx, ny, layer, obj_net_node);
-        node.pinned = (j == 0);
-        var idx = j * cols + i;
-        nodes[idx] = node;
-        if (i > 0) {
-            var left = nodes[idx - 1];
-            if (instance_exists(left)) physics_joint_distance_create(node, left, node.x, node.y, left.x, left.y, spacing);
-        }
-        if (j > 0) {
-            var above = nodes[idx - cols];
-            if (instance_exists(above)) physics_joint_distance_create(node, above, node.x, node.y, above.x, above.y, spacing);
-        }
-    }
-}
+if (!variable_instance_exists(id, "anchor_a_x")) anchor_a_x = x - (cols - 1) * spacing * 0.5;
+if (!variable_instance_exists(id, "anchor_a_y")) anchor_a_y = y;
+if (!variable_instance_exists(id, "anchor_b_x")) anchor_b_x = x + (cols - 1) * spacing * 0.5;
+if (!variable_instance_exists(id, "anchor_b_y")) anchor_b_y = y;
+
+nodes = array_create(cols * rows, noone);
+built = false;
