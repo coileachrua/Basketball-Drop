@@ -25,5 +25,5 @@ if (delta <= -2) {
 
 
 global.next_room = room_next(room);
-room_goto(rm_score);
+alarm[0] = room_speed;
 
