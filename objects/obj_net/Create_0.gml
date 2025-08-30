@@ -9,9 +9,7 @@ for (var j = 0; j < rows; j++) {
         var ny = y + j * spacing;
         var node = instance_create_layer(nx, ny, layer, obj_net_node);
         node.pinned = (j == 0);
-        if (node.pinned) {
-            with (node) phy_kinematic = true;
-        }
+        if (node.pinned) physics_joint_distance_create(node, noone, node.x, node.y, node.x, node.y, 0);
         var idx = j * cols + i;
         nodes[idx] = node;
         if (i > 0) {

@@ -1,3 +1,5 @@
+if (pinned) exit;
+
 var ball_inst = instance_nearest(x, y, obj_ball);
 if (ball_inst != noone) {
     var dx = ball_inst.x - x;
