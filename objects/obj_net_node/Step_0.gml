@@ -5,6 +5,6 @@ if (ball_inst != noone) {
     var dist_sq = dx * dx + dy * dy;
     var radius = ball_inst.sprite_width * 0.5;
     if (dist_sq < radius * radius) {
-        physics_apply_impulse(id, x, y, ball_inst.phy_speed_x * 0.2, ball_inst.phy_speed_y * 0.2);
+        physics_apply_impulse(x, y, ball_inst.phy_speed_x * 0.2, ball_inst.phy_speed_y * 0.2);
     }
 }
