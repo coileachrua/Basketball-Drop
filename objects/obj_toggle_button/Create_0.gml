@@ -5,7 +5,8 @@ if (!variable_instance_exists(id, "toggle_key")) toggle_key = "sfx_enabled";
 
 // Visual defaults
 hover      = false;
-width      = 200;
+// Use wider size for toggle buttons
+width      = 300;
 x          = (room_width - width) / 2; // Center horizontally
 height     = 48;
 bg_on      = c_lime;

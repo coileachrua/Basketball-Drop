@@ -37,6 +37,18 @@ if (room != last_room) {
         global.spawn_zone_right  = 0;
         global.spawn_zone_bottom = 0;
     }
+
+    var title_text = "";
+    switch (room) {
+        case rm_1: title_text = "Swish"; break;
+        case rm_2: title_text = "Collision"; break;
+        case rm_3: title_text = "Eye of the Needle"; break;
+        case rm_4: title_text = "Bumpy"; break;
+    }
+    if (title_text != "") {
+        show_level_title(title_text);
+    }
+
     last_room = room;
 }
 
