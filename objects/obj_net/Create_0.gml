@@ -14,11 +14,11 @@ for (var j = 0; j < rows; j++) {
         nodes[idx] = node;
         if (i > 0) {
             var left = nodes[idx - 1];
-            if (instance_exists(left)) physics_joint_distance_create(node, left, node.x, node.y, left.x, left.y);
+            if (instance_exists(left)) physics_joint_distance_create(node, left, node.x, node.y, left.x, left.y, spacing);
         }
         if (j > 0) {
             var above = nodes[idx - cols];
-            if (instance_exists(above)) physics_joint_distance_create(node, above, node.x, node.y, above.x, above.y);
+            if (instance_exists(above)) physics_joint_distance_create(node, above, node.x, node.y, above.x, above.y, spacing);
         }
     }
 }
