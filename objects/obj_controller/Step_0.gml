@@ -37,6 +37,18 @@ if (room != last_room) {
         global.spawn_zone_right  = 0;
         global.spawn_zone_bottom = 0;
     }
+
+    var title_text = "";
+    switch (room) {
+        case rm_1: title_text = "Level 1"; break;
+        case rm_2: title_text = "Level 2"; break;
+        case rm_3: title_text = "Level 3"; break;
+        case rm_4: title_text = "Level 4"; break;
+    }
+    if (title_text != "") {
+        show_level_title(title_text);
+    }
+
     last_room = room;
 }
 
