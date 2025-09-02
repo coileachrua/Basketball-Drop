@@ -49,6 +49,7 @@
     {"id":{"name":"obj_gamepad","path":"objects/obj_gamepad/obj_gamepad.yy",},},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_level_title","path":"objects/obj_level_title/obj_level_title.yy",},},
+    {"id":{"name":"obj_moving_wall","path":"objects/obj_moving_wall/obj_moving_wall.yy",},},
     {"id":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},},
     {"id":{"name":"obj_reset_button","path":"objects/obj_reset_button/obj_reset_button.yy",},},
     {"id":{"name":"obj_room_button","path":"objects/obj_room_button/obj_room_button.yy",},},
